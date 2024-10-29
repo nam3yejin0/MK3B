@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>GT Gallery</title>
+    <style>
+        @layer base {
+            :root {
+                --accent-color: #D40000;
+                --base-color: #0f0f0f;
+                --text-color: #fbfcf8;
+            }
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-[--base-color] text-[--text-color] font-montserrat text-base">
+    <!-- Header -->
+    <header class="fixed top-0 left-0 w-full z-[100] flex justify-between items-center py-4 px-5 bg-transparent">
+        <div class="text-2xl font-bold">GT Gallery</div>
+        <nav class="hidden md:flex space-x-4">
+            <a href="#home" class="hover:text-[--accent-color]">Home</a>
+            <a href="#brands" class="hover:text-[--accent-color]">Brands</a>
+            <a href="#aboutus" class="hover:text-[--accent-color]">About Us</a>
+            <a href="#footer" class="hover:text-[--accent-color]">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="pt-20">
+        <!-- Home Section -->
+        <section id="home" class="text-center my-10">
+            <h1 class="text-5xl font-semibold mb-6">Your Journey Starts Here</h1>
+            <p class="text-xl mb-10">Quality You Can Count On</p>
+            <button class="bg-[--accent-color] text-[--text-color] py-4 px-16 rounded-full text-lg font-bold hover:bg-[--text-color] hover:text-[--accent-color] transition duration-300">
+                <a href="#brands">Start</a>
+            </button>
+        </section>
+
+        <!-- Brands Section -->
+        <section id="brands" class="grid grid-cols-1 md:grid-cols-3 gap-10 p-10 px-[50px] text-center">
+
+            <article class="brands_card">
+                <div class="relative overflow-hidden group">
+                    <img src="/imgs/McLaren.png" alt="McLaren" class="w-full h-auto transition-all duration-300 group-hover:scale-105">
+                    <div class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <h1 class="text-2xl font-bold text-[--text-color]">McLaren</h1>
+                        <p class="text-lg">For price inquiries, please contact your official Dealer.</p>
+                    </div>
+                </div>
+            </article>
+            <article class="brands_card">
+                <div class="relative overflow-hidden group">
+                    <img src="/imgs/AstonMartin.png" alt="Aston Martin" class="w-full h-auto transition-all duration-300 group-hover:scale-105">
+                    <div class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <h1 class="text-2xl font-bold text-[--text-color]">Aston Martin</h1>
+                        <p class="text-lg">For price inquiries, please contact your official Dealer.</p>
+                    </div>
+                </div>
+            </article>
+            <article class="brands_card">
+                <div class="relative overflow-hidden group">
+                    <img src="/imgs/Nissan.png" alt="Nissan" class="w-full h-auto transition-all duration-300 group-hover:scale-105">
+                    <div class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <h1 class="text-2xl font-bold text-[--text-color]">Nissan</h1>
+                        <p class="text-lg">For price inquiries, please contact your official Dealer.</p>
+                    </div>
+                </div>
+            </article>
+            <article class="brands_card">
+                <div class="relative overflow-hidden group">
+                    <img src="/imgs/911.png" alt="Porsche" class="w-full h-auto transition-all duration-300 group-hover:scale-105">
+                    <div class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <h1 class="text-2xl font-bold text-[--text-color]">Porsche</h1>
+                        <p class="text-lg">For price inquiries, please contact your official Dealer.</p>
+                    </div>
+                </div>
+            </article>
+            <article class="brands_card">
+                <div class="relative overflow-hidden group">
+                    <img src="/imgs/sf90.png" alt="Ferrari" class="w-full h-auto transition-all duration-300 group-hover:scale-105">
+                    <div class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <h1 class="text-2xl font-bold text-[--text-color]">Ferrari</h1>
+                        <p class="text-lg">For price inquiries, please contact your official Dealer.</p>
+                    </div>
+                </div>
+            </article>
+            <article class="brands_card">
+                <div class="relative overflow-hidden group">
+                    <img src="/imgs/Koenigsegg.png" alt="Koenigsegg" class="w-full h-auto transition-all duration-300 group-hover:scale-105">
+                    <div class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <h1 class="text-2xl font-bold text-[--text-color]">Koenigsegg</h1>
+                        <p class="text-lg">For price inquiries, please contact your official Dealer.</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="aboutus" class="my-20 px-10 text-center">
+            <h1 class="text-7xl font-bold mb-10">About Us</h1>
+            <p class="text-2xl mb-10">More about us and our mission</p>
+            <div class="flex flex-wrap justify-center gap-10">
+                <article class="w-[20%] relative group overflow-hidden">
+                    <img src="/imgs/jia.jpg" alt="Kezhia Aurelia" class="w-full h-auto rounded-full transition-all duration-300 group-hover:scale-105">
+                    <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <h2 class="text-white text-lg">Kezhia Aurelia</h2>
+                    </div>
+                </article>
+                <article class="w-[20%] relative group overflow-hidden">
+                    <img src="/imgs/jema.jpg" alt="Jema" class="w-full h-auto rounded-full transition-all duration-300 group-hover:scale-105">
+                    <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <h2 class="text-white text-lg">Jema</h2>
+                    </div>
+                </article>
+                <article class="w-[20%] relative group overflow-hidden">
+                    <img src="/imgs/me.jpg" alt="Nam" class="w-full h-auto rounded-full transition-all duration-300 group-hover:scale-105">
+                    <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <h2 class="text-white text-lg">Nam</h2>
+                    </div>
+                </article>
+                <article class="w-[20%] relative group overflow-hidden">
+                    <img src="/imgs/ce.jpg" alt="Chesya" class="w-full h-auto rounded-full transition-all duration-300 group-hover:scale-105">
+                    <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <h2 class="text-white text-lg">Chesya</h2>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- GT Section -->
+        <section class="flex flex-col items-center justify-center text-center my-20 px-10 min-h-screen">
+            <h1 class="text-5xl font-semibold mb-6">Where Quality Meets the Road</h1>
+            <p class="text-xl">More Than Just a Deal</p>
+            <div class="w-[50%] mt-10">
+                <div class="text-6xl font-bold text-[--accent-color]">GRAN TURISMO</div>
+                <div class="text-6xl font-bold text-[--text-color]">GRAND GALLERY</div>
+                <img src="/imgs/Vferrari.png" alt="Ferrari" class="w-full h-auto mt-6 rounded-lg">
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" class="bg-[--text-color] py-10 text-center">
+        <p class="text-lg font-semibold text-[--accent-color]">© GT Gallery | @GT_Gallery | All rights reserved.</p>
+    </footer>
+
+    <!-- Vertical Nav (Mobile) -->
+    <div class="fixed top-0 left-0 h-full w-48 bg-[--base-color] shadow-lg transform -translate-x-full transition-transform duration-300 z-[100] md:hidden">
+        <ul class="space-y-4 p-5">
+            <li><a href="#home" class="text-[--text-color] hover:text-[--accent-color]">Home</a></li>
+            <li><a href="#brands" class="text-[--text-color] hover:text-[--accent-color]">Brands</a></li>
+            <li><a href="#aboutus" class="text-[--text-color] hover:text-[--accent-color]">About Us</a></li>
+            <li><a href="#footer" class="text-[--text-color] hover:text-[--accent-color]">Contact</a></li>
+        </ul>
+    </div>
+</body>
+</html>
